@@ -27,7 +27,7 @@ body {
     overflow-y: auto;
 }
 
-/* Dynamic background classes (now hardcoded in HTML) */
+/* Dynamic background classes */
 .weather-dashboard.sunny {
     background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('sunny-bg.jpg');
 }
@@ -61,23 +61,6 @@ body {
 .icon {
     width: 20px;
     height: 20px;
-    stroke: white;
-}
-
-.city-select {
-    background: rgba(255, 255, 255, 0.2);
-    border: 1px solid rgba(255, 255, 255, 0.3);
-    color: white;
-    padding: 8px 12px;
-    border-radius: 8px;
-    font-size: 16px;
-    cursor: pointer;
-    backdrop-filter: blur(10px);
-}
-
-.city-select option {
-    background: rgba(0, 0, 0, 0.8);
-    color: white;
 }
 
 .time-display {
@@ -137,13 +120,7 @@ body {
     font-weight: 600;
     cursor: pointer;
     backdrop-filter: blur(10px);
-    transition: all 0.3s ease;
     margin-top: 10px;
-}
-
-.temp-toggle:hover {
-    background: rgba(255, 255, 255, 0.3);
-    transform: scale(1.05);
 }
 
 .weather-icon-main {
@@ -230,11 +207,6 @@ body {
     padding: 20px;
     text-align: center;
     backdrop-filter: blur(10px);
-    transition: transform 0.3s ease;
-}
-
-.detail-card:hover {
-    transform: translateY(-2px);
 }
 
 .detail-card h4 {
@@ -271,11 +243,6 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    transition: transform 0.3s ease;
-}
-
-.daily-item:hover {
-    transform: translateX(5px);
 }
 
 /* Alternating row colors using nth-child(even) */
@@ -419,9 +386,7 @@ body {
     font-weight: 600;
 }
 
-/* Comprehensive Responsive Design */
-
-/* Extra Large Screens (1440px and above) */
+/* Responsive Design */
 @media (min-width: 1440px) {
     .weather-dashboard {
         padding: 40px;
@@ -445,7 +410,6 @@ body {
     }
 }
 
-/* Large Screens (1200px to 1439px) */
 @media (min-width: 1200px) and (max-width: 1439px) {
     .weather-dashboard {
         padding: 30px;
@@ -460,7 +424,6 @@ body {
     }
 }
 
-/* Desktop Screens (992px to 1199px) */
 @media (min-width: 992px) and (max-width: 1199px) {
     .weather-dashboard {
         padding: 25px;
@@ -479,7 +442,6 @@ body {
     }
 }
 
-/* Tablet Landscape (768px to 991px) */
 @media (min-width: 768px) and (max-width: 991px) {
     .weather-dashboard {
         padding: 20px;
@@ -525,7 +487,6 @@ body {
     }
 }
 
-/* Tablet Portrait (576px to 767px) */
 @media (min-width: 576px) and (max-width: 767px) {
     .weather-dashboard {
         padding: 15px;
@@ -597,7 +558,6 @@ body {
     }
 }
 
-/* Mobile Large (480px to 575px) */
 @media (min-width: 480px) and (max-width: 575px) {
     .weather-dashboard {
         padding: 12px;
@@ -610,11 +570,6 @@ body {
         gap: 12px;
         text-align: center;
         margin-bottom: 15px;
-    }
-    
-    .city-select {
-        width: 100%;
-        max-width: 250px;
     }
     
     .main-content {
@@ -692,7 +647,7 @@ body {
     
     .hourly-item {
         min-width: 60px;
-}
+    }
 
     .hourly-item .time {
         font-size: 12px;
@@ -703,7 +658,6 @@ body {
     }
 }
 
-/* Mobile Small (320px to 479px) */
 @media (max-width: 479px) {
     .weather-dashboard {
         padding: 10px;
@@ -716,12 +670,6 @@ body {
         gap: 10px;
         text-align: center;
         margin-bottom: 12px;
-    }
-    
-    .city-select {
-        width: 100%;
-        font-size: 14px;
-        padding: 6px 10px;
     }
     
     .time-display {
@@ -865,7 +813,6 @@ body {
     }
 }
 
-/* Extra Small Mobile (below 319px) */
 @media (max-width: 319px) {
     .weather-dashboard {
         padding: 8px;
@@ -889,5 +836,4 @@ body {
         font-size: 16px;
     }
 }
-
 
