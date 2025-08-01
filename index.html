@@ -1,14 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Weather Dashboard</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
     <div class="weather-dashboard sunny">
-        <!-- Header with location and time -->
+        <!--Header with location and time-->
         <header class="header">
             <div class="location-selector">
                 <img src="location.jpg" alt="Location Icon" class="icon">
@@ -20,14 +22,13 @@
             </div>
         </header>
 
-        <!-- Main content grid -->
+        <!--Main content grid-->
         <div class="main-content">
-            <!-- Current weather section -->
+            <!--Current weather section-->
             <div class="current-weather">
                 <div class="date-display">
                     <p id="currentDate">Thursday, July 31, 2025</p>
                 </div>
-                
                 <div class="temperature-section">
                     <div class="temp-display">
                         <span id="mainTemp">32</span>°
@@ -37,13 +38,12 @@
                         <div id="mainWeatherIcon" class="weather-icon sunny"></div>
                     </div>
                 </div>
-
                 <div class="weather-description">
                     <p id="weatherDesc">Clear sky with bright sunshine</p>
                     <p id="tempRange">H: 35° L: 28°</p>
                 </div>
 
-                <!-- Weather details grid -->
+                <!--Weather details grid-->
                 <div class="weather-details">
                     <div class="detail-card">
                         <h4>Humidity</h4>
@@ -64,7 +64,7 @@
                 </div>
             </div>
 
-            <!-- 5-day forecast -->
+            <!--5-day forecast-->
             <div class="forecast-section">
                 <h3>5-Day Forecast</h3>
                 <div id="dailyForecast" class="daily-forecast">
@@ -136,8 +136,7 @@
                 </div>
             </div>
         </div>
-
-        <!-- Hourly forecast -->
+        <!--Hourly forecast-->
         <div class="hourly-section">
             <h3>Hourly Forecast</h3>
             <div id="hourlyForecast" class="hourly-forecast">
@@ -269,5 +268,5 @@
 
     <script src="script.js"></script>
 </body>
-</html>
 
+</html>
