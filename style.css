@@ -223,6 +223,7 @@ body {
     text-align: center;
     backdrop-filter: blur(10px);
 }
+
 /* Alternating box colors using nth-child(odd) */
 .detail-card:nth-child(odd) {
     background: beige;
