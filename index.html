@@ -9,26 +9,30 @@
 </head>
 
 <body>
-    <div class="weather-dashboard sunny">
-        <!--Header with location and time-->
+    <div class="weather-dashboard">
+        <!-- Header with city selector and time -->
         <header class="header">
             <div class="location-selector">
-                <img src="location.jpg" alt="Location Icon" class="icon">
-                <p>Lahore, Pakistan</p>
+                 <img src="location.jpg" alt="Location Icon" class="icon">
+                <select id="citySelect" class="city-select">
+                    <option value="lahore">Lahore, Pakistan</option>
+                    <option value="karachi">Karachi, Pakistan</option>
+                </select>
             </div>
             <div class="time-display">
-                <img src="clock.jpg" alt="Clock Icon" class="icon">
-                <span id="currentTime">12:00:00</span>
+                 <img src="clock.jpg" alt="Clock Icon" class="icon">
+                <span id="currentTime">00:00:00</span>
             </div>
         </header>
 
-        <!--Main content grid-->
+        <!-- Main content grid -->
         <div class="main-content">
-            <!--Current weather section-->
+            <!-- Current weather section -->
             <div class="current-weather">
                 <div class="date-display">
-                    <p id="currentDate">Thursday, July 31, 2025</p>
+                    <p id="currentDate">Friday August 1, 2025</p>
                 </div>
+
                 <div class="temperature-section">
                     <div class="temp-display">
                         <span id="mainTemp">32</span>°
@@ -38,12 +42,13 @@
                         <div id="mainWeatherIcon" class="weather-icon sunny"></div>
                     </div>
                 </div>
+
                 <div class="weather-description">
                     <p id="weatherDesc">Clear sky with bright sunshine</p>
                     <p id="tempRange">H: 35° L: 28°</p>
                 </div>
 
-                <!--Weather details grid-->
+                <!-- Weather details grid -->
                 <div class="weather-details">
                     <div class="detail-card">
                         <h4>Humidity</h4>
@@ -64,204 +69,20 @@
                 </div>
             </div>
 
-            <!--5-day forecast-->
+            <!-- 5-day forecast -->
             <div class="forecast-section">
                 <h3>5-Day Forecast</h3>
                 <div id="dailyForecast" class="daily-forecast">
-                    <div class="daily-item">
-                        <div class="daily-info">
-                            <h4>Today</h4>
-                            <p>Aug 2</p>
-                        </div>
-                        <div class="daily-weather">
-                            <div class="daily-icon sunny"></div>
-                            <div class="daily-temps">
-                                <div class="high">35°</div>
-                                <div class="low">28°</div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="daily-item">
-                        <div class="daily-info">
-                            <h4>Tomorrow</h4>
-                            <p>Aug 3</p>
-                        </div>
-                        <div class="daily-weather">
-                            <div class="daily-icon partly-cloudy"></div>
-                            <div class="daily-temps">
-                                <div class="high">33°</div>
-                                <div class="low">26°</div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="daily-item">
-                        <div class="daily-info">
-                            <h4>Monday</h4>
-                            <p>Aug 4</p>
-                        </div>
-                        <div class="daily-weather">
-                            <div class="daily-icon cloudy"></div>
-                            <div class="daily-temps">
-                                <div class="high">31°</div>
-                                <div class="low">25°</div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="daily-item">
-                        <div class="daily-info">
-                            <h4>Tuesday</h4>
-                            <p>Aug 5</p>
-                        </div>
-                        <div class="daily-weather">
-                            <div class="daily-icon rainy"></div>
-                            <div class="daily-temps">
-                                <div class="high">29°</div>
-                                <div class="low">23°</div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="daily-item">
-                        <div class="daily-info">
-                            <h4>Wednesday</h4>
-                            <p>Aug 6</p>
-                        </div>
-                        <div class="daily-weather">
-                            <div class="daily-icon rainy"></div>
-                            <div class="daily-temps">
-                                <div class="high">27°</div>
-                                <div class="low">21°</div>
-                            </div>
-                        </div>
-                    </div>
+                    <!-- Daily forecast items will be generated by JavaScript -->
                 </div>
             </div>
         </div>
-        <!--Hourly forecast-->
+
+        <!-- Hourly forecast -->
         <div class="hourly-section">
             <h3>Hourly Forecast</h3>
             <div id="hourlyForecast" class="hourly-forecast">
-                <div class="hourly-items">
-                    <div class="hourly-item">
-                        <div class="time">00:00</div>
-                        <div class="icon night-cloudy"></div>
-                        <div class="temp">26°</div>
-                    </div>
-                    <div class="hourly-item">
-                        <div class="time">01:00</div>
-                        <div class="icon night-cloudy"></div>
-                        <div class="temp">25°</div>
-                    </div>
-                    <div class="hourly-item">
-                        <div class="time">02:00</div>
-                        <div class="icon night-cloudy"></div>
-                        <div class="temp">24°</div>
-                    </div>
-                    <div class="hourly-item">
-                        <div class="time">03:00</div>
-                        <div class="icon night-cloudy"></div>
-                        <div class="temp">24°</div>
-                    </div>
-                    <div class="hourly-item">
-                        <div class="time">04:00</div>
-                        <div class="icon night-cloudy"></div>
-                        <div class="temp">25°</div>
-                    </div>
-                    <div class="hourly-item">
-                        <div class="time">05:00</div>
-                        <div class="icon partly-cloudy"></div>
-                        <div class="temp">26°</div>
-                    </div>
-                    <div class="hourly-item">
-                        <div class="time">06:00</div>
-                        <div class="icon partly-cloudy"></div>
-                        <div class="temp">27°</div>
-                    </div>
-                    <div class="hourly-item">
-                        <div class="time">07:00</div>
-                        <div class="icon sunny"></div>
-                        <div class="temp">28°</div>
-                    </div>
-                    <div class="hourly-item">
-                        <div class="time">08:00</div>
-                        <div class="icon sunny"></div>
-                        <div class="temp">29°</div>
-                    </div>
-                    <div class="hourly-item">
-                        <div class="time">09:00</div>
-                        <div class="icon sunny"></div>
-                        <div class="temp">30°</div>
-                    </div>
-                    <div class="hourly-item">
-                        <div class="time">10:00</div>
-                        <div class="icon sunny"></div>
-                        <div class="temp">31°</div>
-                    </div>
-                    <div class="hourly-item">
-                        <div class="time">11:00</div>
-                        <div class="icon sunny"></div>
-                        <div class="temp">32°</div>
-                    </div>
-                    <div class="hourly-item">
-                        <div class="time">12:00</div>
-                        <div class="icon sunny"></div>
-                        <div class="temp">34°</div>
-                    </div>
-                    <div class="hourly-item">
-                        <div class="time">13:00</div>
-                        <div class="icon sunny"></div>
-                        <div class="temp">35°</div>
-                    </div>
-                    <div class="hourly-item">
-                        <div class="time">14:00</div>
-                        <div class="icon sunny"></div>
-                        <div class="temp">35°</div>
-                    </div>
-                    <div class="hourly-item">
-                        <div class="time">15:00</div>
-                        <div class="icon sunny"></div>
-                        <div class="temp">34°</div>
-                    </div>
-                    <div class="hourly-item">
-                        <div class="time">16:00</div>
-                        <div class="icon sunny"></div>
-                        <div class="temp">33°</div>
-                    </div>
-                    <div class="hourly-item">
-                        <div class="time">17:00</div>
-                        <div class="icon partly-cloudy"></div>
-                        <div class="temp">32°</div>
-                    </div>
-                    <div class="hourly-item">
-                        <div class="time">18:00</div>
-                        <div class="icon partly-cloudy"></div>
-                        <div class="temp">31°</div>
-                    </div>
-                    <div class="hourly-item">
-                        <div class="time">19:00</div>
-                        <div class="icon night-cloudy"></div>
-                        <div class="temp">30°</div>
-                    </div>
-                    <div class="hourly-item">
-                        <div class="time">20:00</div>
-                        <div class="icon night-cloudy"></div>
-                        <div class="temp">29°</div>
-                    </div>
-                    <div class="hourly-item">
-                        <div class="time">21:00</div>
-                        <div class="icon night-cloudy"></div>
-                        <div class="temp">28°</div>
-                    </div>
-                    <div class="hourly-item">
-                        <div class="time">22:00</div>
-                        <div class="icon night-cloudy"></div>
-                        <div class="temp">27°</div>
-                    </div>
-                    <div class="hourly-item">
-                        <div class="time">23:00</div>
-                        <div class="icon night-cloudy"></div>
-                        <div class="temp">26°</div>
-                    </div>
-                </div>
+                <!-- Hourly forecast items will be generated by JavaScript -->
             </div>
         </div>
     </div>
