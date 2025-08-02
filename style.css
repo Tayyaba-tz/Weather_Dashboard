@@ -8,7 +8,6 @@ body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     color: black;
     overflow-x: hidden;
-
     min-height: 100vh;
 }
 
@@ -61,7 +60,6 @@ body {
 .icon {
     width: 20px;
     height: 20px;
-    stroke: white;
 }
 
 .city-select {
