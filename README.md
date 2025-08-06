@@ -1,0 +1,1 @@
+This is my Weather Dashboard using HTML, CSS, and JS. I have used divs to separate different sections of dashboard. To connect HTML with JS, I have used DOM (Document Object Model) and its methods so that the display and data could update according to the selected options. In CSS, I have used different styling attributes to make my display attractive.
