@@ -1,8 +1,8 @@
-// Mock weather data for both cities 
+// Mock weather data for all cities 
 var weatherData = {
     lahore: {
         current: {
-            temperature: 30,
+            temperature: 32,
             condition: 'sunny',
             description: 'Clear sky with bright sunshine',
             high: 35,
@@ -40,11 +40,11 @@ var weatherData = {
             { time: '23:00', temp: 26, condition: 'night-cloudy' }
         ],
         daily: [
-            { day: 'Today', date: ' Aug 2', high: 35, low: 28, condition: 'sunny' },
-            { day: 'Tomorrow', date: ' Aug 3', high: 33, low: 26, condition: 'partly-cloudy' },
-            { day: 'Monday', date: ' Aug 4', high: 31, low: 25, condition: 'cloudy' },
-            { day: 'Tuesday', date: ' Aug 5', high: 29, low: 23, condition: 'rainy' },
-            { day: 'Wednesday', date: ' Aug 6', high: 27, low: 21, condition: 'rainy' }
+            { day: 'Today', date: 'Jul 30', high: 35, low: 28, condition: 'sunny' },
+            { day: 'Tomorrow', date: 'Jul 31', high: 33, low: 26, condition: 'partly-cloudy' },
+            { day: 'Thursday', date: 'Aug 1', high: 31, low: 25, condition: 'cloudy' },
+            { day: 'Friday', date: 'Aug 2', high: 29, low: 23, condition: 'rainy' },
+            { day: 'Saturday', date: 'Aug 3', high: 27, low: 21, condition: 'rainy' }
         ]
     },
     karachi: {
@@ -87,11 +87,241 @@ var weatherData = {
             { time: '23:00', temp: 26, condition: 'night-cloudy' }
         ],
         daily: [
-            { day: 'Today', date: ' Aug 2', high: 31, low: 26, condition: 'partly-cloudy' },
-            { day: 'Tomorrow', date: ' Aug 3', high: 30, low: 25, condition: 'cloudy' },
-            { day: 'Monday', date: ' Aug 4', high: 28, low: 24, condition: 'rainy' },
-            { day: 'Tuesday', date: ' Aug 5', high: 26, low: 22, condition: 'rainy' },
-            { day: 'Wednesday', date: ' Aug 6', high: 29, low: 24, condition: 'partly-cloudy' }
+            { day: 'Today', date: 'Jul 30', high: 31, low: 26, condition: 'partly-cloudy' },
+            { day: 'Tomorrow', date: 'Jul 31', high: 30, low: 25, condition: 'cloudy' },
+            { day: 'Thursday', date: 'Aug 1', high: 28, low: 24, condition: 'rainy' },
+            { day: 'Friday', date: 'Aug 2', high: 26, low: 22, condition: 'rainy' },
+            { day: 'Saturday', date: 'Aug 3', high: 29, low: 24, condition: 'partly-cloudy' }
+        ]
+    },
+    islamabad: {
+        current: {
+            temperature: 28,
+            condition: 'partly-cloudy',
+            description: 'Pleasant weather with scattered clouds',
+            high: 30,
+            low: 22,
+            humidity: 55,
+            windSpeed: 8,
+            pressure: 1015,
+            uvIndex: 7
+        },
+        hourly: [
+            { time: '00:00', temp: 20, condition: 'night-clear' },
+            { time: '01:00', temp: 19, condition: 'night-clear' },
+            { time: '02:00', temp: 18, condition: 'night-clear' },
+            { time: '03:00', temp: 18, condition: 'night-clear' },
+            { time: '04:00', temp: 19, condition: 'night-clear' },
+            { time: '05:00', temp: 20, condition: 'partly-cloudy' },
+            { time: '06:00', temp: 22, condition: 'partly-cloudy' },
+            { time: '07:00', temp: 24, condition: 'sunny' },
+            { time: '08:00', temp: 25, condition: 'sunny' },
+            { time: '09:00', temp: 26, condition: 'sunny' },
+            { time: '10:00', temp: 27, condition: 'sunny' },
+            { time: '11:00', temp: 28, condition: 'partly-cloudy' },
+            { time: '12:00', temp: 29, condition: 'partly-cloudy' },
+            { time: '13:00', temp: 30, condition: 'partly-cloudy' },
+            { time: '14:00', temp: 30, condition: 'partly-cloudy' },
+            { time: '15:00', temp: 29, condition: 'partly-cloudy' },
+            { time: '16:00', temp: 28, condition: 'partly-cloudy' },
+            { time: '17:00', temp: 27, condition: 'cloudy' },
+            { time: '18:00', temp: 26, condition: 'cloudy' },
+            { time: '19:00', temp: 24, condition: 'night-cloudy' },
+            { time: '20:00', temp: 23, condition: 'night-cloudy' },
+            { time: '21:00', temp: 22, condition: 'night-cloudy' },
+            { time: '22:00', temp: 21, condition: 'night-cloudy' },
+            { time: '23:00', temp: 20, condition: 'night-cloudy' }
+        ],
+        daily: [
+            { day: 'Today', date: 'Jul 30', high: 30, low: 22, condition: 'partly-cloudy' },
+            { day: 'Tomorrow', date: 'Jul 31', high: 28, low: 20, condition: 'cloudy' },
+            { day: 'Thursday', date: 'Aug 1', high: 26, low: 18, condition: 'rainy' },
+            { day: 'Friday', date: 'Aug 2', high: 24, low: 16, condition: 'thunderstorm' },
+            { day: 'Saturday', date: 'Aug 3', high: 27, low: 19, condition: 'partly-cloudy' }
+        ]
+    },
+    peshawar: {
+        current: {
+            temperature: 35,
+            condition: 'sunny',
+            description: 'Hot and dry with clear skies',
+            high: 38,
+            low: 30,
+            humidity: 35,
+            windSpeed: 15,
+            pressure: 1010,
+            uvIndex: 9
+        },
+        hourly: [
+            { time: '00:00', temp: 28, condition: 'night-clear' },
+            { time: '01:00', temp: 27, condition: 'night-clear' },
+            { time: '02:00', temp: 26, condition: 'night-clear' },
+            { time: '03:00', temp: 26, condition: 'night-clear' },
+            { time: '04:00', temp: 27, condition: 'night-clear' },
+            { time: '05:00', temp: 28, condition: 'sunny' },
+            { time: '06:00', temp: 30, condition: 'sunny' },
+            { time: '07:00', temp: 32, condition: 'sunny' },
+            { time: '08:00', temp: 33, condition: 'sunny' },
+            { time: '09:00', temp: 34, condition: 'sunny' },
+            { time: '10:00', temp: 35, condition: 'sunny' },
+            { time: '11:00', temp: 36, condition: 'sunny' },
+            { time: '12:00', temp: 37, condition: 'sunny' },
+            { time: '13:00', temp: 38, condition: 'sunny' },
+            { time: '14:00', temp: 38, condition: 'sunny' },
+            { time: '15:00', temp: 37, condition: 'sunny' },
+            { time: '16:00', temp: 36, condition: 'sunny' },
+            { time: '17:00', temp: 35, condition: 'sunny' },
+            { time: '18:00', temp: 34, condition: 'partly-cloudy' },
+            { time: '19:00', temp: 32, condition: 'night-clear' },
+            { time: '20:00', temp: 31, condition: 'night-clear' },
+            { time: '21:00', temp: 30, condition: 'night-clear' },
+            { time: '22:00', temp: 29, condition: 'night-clear' },
+            { time: '23:00', temp: 28, condition: 'night-clear' }
+        ],
+        daily: [
+            { day: 'Today', date: 'Jul 30', high: 38, low: 30, condition: 'sunny' },
+            { day: 'Tomorrow', date: 'Jul 31', high: 36, low: 28, condition: 'sunny' },
+            { day: 'Thursday', date: 'Aug 1', high: 34, low: 26, condition: 'partly-cloudy' },
+            { day: 'Friday', date: 'Aug 2', high: 32, low: 24, condition: 'windy' },
+            { day: 'Saturday', date: 'Aug 3', high: 35, low: 27, condition: 'sunny' }
+        ]
+    },
+    quetta: {
+        current: {
+            temperature: 22,
+            condition: 'cloudy',
+            description: 'Cool and cloudy mountain weather',
+            high: 25,
+            low: 15,
+            humidity: 60,
+            windSpeed: 20,
+            pressure: 1018,
+            uvIndex: 4
+        },
+        hourly: [
+            { time: '00:00', temp: 12, condition: 'night-clear' },
+            { time: '01:00', temp: 11, condition: 'night-clear' },
+            { time: '02:00', temp: 10, condition: 'night-clear' },
+            { time: '03:00', temp: 10, condition: 'night-clear' },
+            { time: '04:00', temp: 11, condition: 'night-clear' },
+            { time: '05:00', temp: 13, condition: 'cloudy' },
+            { time: '06:00', temp: 15, condition: 'cloudy' },
+            { time: '07:00', temp: 17, condition: 'cloudy' },
+            { time: '08:00', temp: 18, condition: 'cloudy' },
+            { time: '09:00', temp: 19, condition: 'cloudy' },
+            { time: '10:00', temp: 20, condition: 'cloudy' },
+            { time: '11:00', temp: 21, condition: 'cloudy' },
+            { time: '12:00', temp: 22, condition: 'cloudy' },
+            { time: '13:00', temp: 24, condition: 'partly-cloudy' },
+            { time: '14:00', temp: 25, condition: 'partly-cloudy' },
+            { time: '15:00', temp: 24, condition: 'cloudy' },
+            { time: '16:00', temp: 23, condition: 'cloudy' },
+            { time: '17:00', temp: 22, condition: 'cloudy' },
+            { time: '18:00', temp: 20, condition: 'cloudy' },
+            { time: '19:00', temp: 18, condition: 'night-cloudy' },
+            { time: '20:00', temp: 16, condition: 'night-cloudy' },
+            { time: '21:00', temp: 15, condition: 'night-cloudy' },
+            { time: '22:00', temp: 14, condition: 'night-cloudy' },
+            { time: '23:00', temp: 13, condition: 'night-cloudy' }
+        ],
+        daily: [
+            { day: 'Today', date: 'Jul 30', high: 25, low: 15, condition: 'cloudy' },
+            { day: 'Tomorrow', date: 'Jul 31', high: 23, low: 13, condition: 'rainy' },
+            { day: 'Thursday', date: 'Aug 1', high: 20, low: 10, condition: 'thunderstorm' },
+            { day: 'Friday', date: 'Aug 2', high: 18, low: 8, condition: 'windy' },
+            { day: 'Saturday', date: 'Aug 3', high: 22, low: 12, condition: 'partly-cloudy' }
+        ]
+    },
+    gilgit: {
+        current: {
+            temperature: 18,
+            condition: 'partly-cloudy',
+            description: 'Cool mountain air with scattered clouds',
+            high: 20,
+            low: 8,
+            humidity: 65,
+            windSpeed: 12,
+            pressure: 1020,
+            uvIndex: 5
+        },
+        hourly: [
+            { time: '00:00', temp: 6, condition: 'night-clear' },
+            { time: '01:00', temp: 5, condition: 'night-clear' },
+            { time: '02:00', temp: 4, condition: 'night-clear' },
+            { time: '03:00', temp: 4, condition: 'night-clear' },
+            { time: '04:00', temp: 5, condition: 'night-clear' },
+            { time: '05:00', temp: 7, condition: 'partly-cloudy' },
+            { time: '06:00', temp: 9, condition: 'partly-cloudy' },
+            { time: '07:00', temp: 11, condition: 'partly-cloudy' },
+            { time: '08:00', temp: 13, condition: 'partly-cloudy' },
+            { time: '09:00', temp: 15, condition: 'partly-cloudy' },
+            { time: '10:00', temp: 16, condition: 'partly-cloudy' },
+            { time: '11:00', temp: 17, condition: 'partly-cloudy' },
+            { time: '12:00', temp: 18, condition: 'partly-cloudy' },
+            { time: '13:00', temp: 19, condition: 'partly-cloudy' },
+            { time: '14:00', temp: 20, condition: 'partly-cloudy' },
+            { time: '15:00', temp: 19, condition: 'partly-cloudy' },
+            { time: '16:00', temp: 18, condition: 'partly-cloudy' },
+            { time: '17:00', temp: 16, condition: 'cloudy' },
+            { time: '18:00', temp: 14, condition: 'cloudy' },
+            { time: '19:00', temp: 12, condition: 'night-cloudy' },
+            { time: '20:00', temp: 10, condition: 'night-cloudy' },
+            { time: '21:00', temp: 9, condition: 'night-cloudy' },
+            { time: '22:00', temp: 8, condition: 'night-cloudy' },
+            { time: '23:00', temp: 7, condition: 'night-cloudy' }
+        ],
+        daily: [
+            { day: 'Today', date: 'Jul 30', high: 20, low: 8, condition: 'partly-cloudy' },
+            { day: 'Tomorrow', date: 'Jul 31', high: 18, low: 6, condition: 'cloudy' },
+            { day: 'Thursday', date: 'Aug 1', high: 15, low: 3, condition: 'rainy' },
+            { day: 'Friday', date: 'Aug 2', high: 12, low: 0, condition: 'windy' },
+            { day: 'Saturday', date: 'Aug 3', high: 17, low: 5, condition: 'partly-cloudy' }
+        ]
+    },
+    muzaffarabad: {
+        current: {
+            temperature: 25,
+            condition: 'rainy',
+            description: 'Light rain with cool mountain breeze',
+            high: 27,
+            low: 18,
+            humidity: 75,
+            windSpeed: 10,
+            pressure: 1016,
+            uvIndex: 3
+        },
+        hourly: [
+            { time: '00:00', temp: 16, condition: 'night-rainy' },
+            { time: '01:00', temp: 15, condition: 'night-rainy' },
+            { time: '02:00', temp: 15, condition: 'night-rainy' },
+            { time: '03:00', temp: 15, condition: 'night-rainy' },
+            { time: '04:00', temp: 16, condition: 'night-rainy' },
+            { time: '05:00', temp: 17, condition: 'rainy' },
+            { time: '06:00', temp: 18, condition: 'rainy' },
+            { time: '07:00', temp: 19, condition: 'rainy' },
+            { time: '08:00', temp: 20, condition: 'rainy' },
+            { time: '09:00', temp: 22, condition: 'rainy' },
+            { time: '10:00', temp: 23, condition: 'rainy' },
+            { time: '11:00', temp: 24, condition: 'rainy' },
+            { time: '12:00', temp: 25, condition: 'rainy' },
+            { time: '13:00', temp: 26, condition: 'thunderstorm' },
+            { time: '14:00', temp: 27, condition: 'thunderstorm' },
+            { time: '15:00', temp: 26, condition: 'rainy' },
+            { time: '16:00', temp: 25, condition: 'rainy' },
+            { time: '17:00', temp: 24, condition: 'rainy' },
+            { time: '18:00', temp: 22, condition: 'rainy' },
+            { time: '19:00', temp: 21, condition: 'night-rainy' },
+            { time: '20:00', temp: 20, condition: 'night-rainy' },
+            { time: '21:00', temp: 19, condition: 'night-rainy' },
+            { time: '22:00', temp: 18, condition: 'night-rainy' },
+            { time: '23:00', temp: 17, condition: 'night-rainy' }
+        ],
+        daily: [
+            { day: 'Today', date: 'Jul 30', high: 27, low: 18, condition: 'rainy' },
+            { day: 'Tomorrow', date: 'Jul 31', high: 25, low: 16, condition: 'thunderstorm' },
+            { day: 'Thursday', date: 'Aug 1', high: 22, low: 14, condition: 'thunderstorm' },
+            { day: 'Friday', date: 'Aug 2', high: 20, low: 12, condition: 'rainy' },
+            { day: 'Saturday', date: 'Aug 3', high: 24, low: 15, condition: 'cloudy' }
         ]
     }
 };
@@ -117,18 +347,87 @@ var dailyForecast = document.getElementById('dailyForecast');
 var hourlyForecast = document.getElementById('hourlyForecast');
 var dashboard = document.querySelector('.weather-dashboard');
 
-// Function to decide weather condition based on temperature
-function getWeatherCondition(temperature) {
-    if (temperature >= 30) {
-        return 'sunny';
+// Function to get time-based weather condition
+function getTimeBasedCondition(baseCondition, hour) {
+    // Night time is from 19:00 to 5:00 (7 PM to 5 AM)
+    var isNightTime = hour >= 19 || hour < 5;
+    
+    if (!isNightTime) {
+        // Day time - return original condition
+        return baseCondition;
     }
-    if (temperature >= 25) {
-        return 'partly-cloudy';
+    
+    // Night time - convert to night version
+    switch (baseCondition) {
+        case 'sunny':
+        case 'partly-cloudy':
+            return 'night-clear';
+        case 'cloudy':
+            return 'night-cloudy';
+        case 'rainy':
+        case 'thunderstorm':
+            return 'night-rainy';
+        case 'windy':
+            return 'night-clear';
+        default:
+            return baseCondition;
     }
-    if (temperature >= 20) {
-        return 'cloudy';
+}
+
+// Function to update hourly forecast with time-based conditions
+function updateHourlyConditions() {
+    for (var cityKey in weatherData) {
+        var cityData = weatherData[cityKey];
+        for (var i = 0; i < cityData.hourly.length; i++) {
+            var hourData = cityData.hourly[i];
+            var hour = parseInt(hourData.time.split(':')[0]);
+            
+            // Get base condition from original data or determine from temperature
+            var baseCondition = hourData.originalCondition || hourData.condition;
+            
+            // Store original condition if not already stored
+            if (!hourData.originalCondition) {
+                hourData.originalCondition = hourData.condition;
+            }
+            
+            // Update condition based on time
+            hourData.condition = getTimeBasedCondition(baseCondition, hour);
+        }
     }
-    return 'rainy';
+}
+
+// Function to get weather description based on condition
+function getWeatherDescription(condition, temperature) {
+    var descriptions = {
+        'sunny': 'Clear sky with bright sunshine',
+        'partly-cloudy': 'Partly cloudy with scattered clouds',
+        'cloudy': 'Overcast with thick cloud cover',
+        'rainy': 'Light to moderate rainfall',
+        'thunderstorm': 'Thunderstorms with heavy rain and lightning',
+        'windy': 'Strong winds with clear to partly cloudy skies',
+        'night-clear': 'Clear night sky with stars visible',
+        'night-cloudy': 'Cloudy night with overcast skies',
+        'night-rainy': 'Rainy night with light to moderate precipitation'
+    };
+    
+    var baseDescription = descriptions[condition] || 'Weather conditions';
+    
+    // Add temperature context
+    if (temperature >= 35) {
+        return baseDescription + ' - Very hot weather';
+    } else if (temperature >= 30) {
+        return baseDescription + ' - Hot weather';
+    } else if (temperature >= 25) {
+        return baseDescription + ' - Warm weather';
+    } else if (temperature >= 20) {
+        return baseDescription + ' - Pleasant weather';
+    } else if (temperature >= 15) {
+        return baseDescription + ' - Cool weather';
+    } else if (temperature >= 10) {
+        return baseDescription + ' - Cold weather';
+    } else {
+        return baseDescription + ' - Very cold weather';
+    }
 }
 
 // Function to convert temperature between Celsius and Fahrenheit
@@ -156,18 +455,25 @@ function updateWeatherIcon(element, condition) {
 function updateCurrentWeather() {
     // Get the weather data for the current city
     var data = weatherData[currentCity].current;
+    
+    // Get current hour for time-based condition
+    var now = new Date();
+    var currentHour = now.getHours();
+    
+    // Get time-based condition
+    var timeBasedCondition = getTimeBasedCondition(data.condition, currentHour);
 
     // Update the main temperature
     mainTemp.textContent = convertTemperature(data.temperature);
 
-    // Update the weather icon
-    updateWeatherIcon(mainWeatherIcon, data.condition);
+    // Update the weather icon with time-based condition
+    updateWeatherIcon(mainWeatherIcon, timeBasedCondition);
 
-    // Update the background image
-    updateBackground(data.condition);
+    // Update the background image with time-based condition
+    updateBackground(timeBasedCondition);
 
     // Update the weather description
-    weatherDesc.textContent = data.description;
+    weatherDesc.textContent = getWeatherDescription(timeBasedCondition, data.temperature);
 
     // Update the high and low temperatures
     var highTemp = convertTemperature(data.high);
@@ -319,7 +625,7 @@ function updateDateTime() {
     currentTime.textContent = timeString;
 
     // Get the current date
-    var days = ['Today', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday'];
+    var days = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
     var months = ['January', 'February', 'March', 'April', 'May', 'June',
         'July', 'August', 'September', 'October', 'November', 'December'];
 
@@ -331,6 +637,37 @@ function updateDateTime() {
     // Update the date display
     var dateString = dayName + ', ' + monthName + ' ' + dayNumber + ', ' + year;
     currentDate.textContent = dateString;
+}
+
+// Function to update forecast dates and days automatically
+function updateForecastDates() {
+    var now = new Date();
+    var days = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
+    var months = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
+    
+    // Update daily forecast dates for all cities
+    for (var cityKey in weatherData) {
+        var cityData = weatherData[cityKey];
+        for (var i = 0; i < cityData.daily.length; i++) {
+            var forecastDate = new Date(now);
+            forecastDate.setDate(now.getDate() + i);
+            
+            var dayName = '';
+            if (i === 0) {
+                dayName = 'Today';
+            } else if (i === 1) {
+                dayName = 'Tomorrow';
+            } else {
+                dayName = days[forecastDate.getDay()];
+            }
+            
+            var monthName = months[forecastDate.getMonth()];
+            var dayNumber = forecastDate.getDate();
+            
+            cityData.daily[i].day = dayName;
+            cityData.daily[i].date = monthName + ' ' + dayNumber;
+        }
+    }
 }
 
 // Function to update all weather data
@@ -363,6 +700,12 @@ function startApp() {
     // Set the initial city
     citySelect.value = currentCity;
 
+    // Update hourly conditions based on time
+    updateHourlyConditions();
+
+    // Update forecast dates first
+    updateForecastDates();
+
     // Update the time and date right away
     updateDateTime();
 
@@ -371,6 +714,12 @@ function startApp() {
 
     // Update the time every second
     setInterval(updateDateTime, 1000);
+    
+    // Update forecast dates every hour (3600000 milliseconds)
+    setInterval(updateForecastDates, 3600000);
+    
+    // Update hourly conditions every hour to reflect time changes
+    setInterval(updateHourlyConditions, 3600000);
 }
 
 // Start the app when the page loads
